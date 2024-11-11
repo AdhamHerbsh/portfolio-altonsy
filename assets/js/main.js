@@ -126,11 +126,14 @@
   
   
   //===== Initialization Swiper ====//
-  for (let index = 0; index <= 3; index++) {
+  for (let index = 1; index <= 4; index++) {
     var swiperEl = document.querySelector(".to-left-swiper"+index);
       Object.assign(swiperEl, {
       grabCursor: true,
       effect: "creative",
+      autoplay: {
+        delay: index*10000,
+      },
       creativeEffect: {
         prev: {
           shadow: true,
